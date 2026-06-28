@@ -1,0 +1,646 @@
+/* Global */
+/* Mobile Navbar Background Fix */
+body {
+
+    background: #0B0F19;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+@media (max-width:991px) {
+
+    .navbar-collapse {
+
+        background: #0B0F19;
+
+        padding: 20px;
+
+        border-radius: 10px;
+
+        margin-top: 10px;
+
+        box-shadow: 0 0 15px rgba(139, 92, 246, 0.3);
+
+    }
+
+    .navbar-nav .nav-link {
+
+        padding: 10px 0;
+
+    }
+
+}
+
+.navbar {
+
+    background: #0B0F19;
+    padding: 15px 0;
+
+}
+
+.navbar-brand {
+
+    color: #8B5CF6 !important;
+    font-size: 22px;
+
+
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    position: relative;
+}
+
+/* Active page underline */
+nav a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background: #8B5CF6;
+}
+
+.nav-link {
+
+    color: #E5E7EB !important;
+    margin-left: 20px;
+    transition: 0.3s;
+
+}
+
+.nav-link:hover {
+
+    color: #8B5CF6 !important;
+
+}
+
+.btn-gradient {
+
+    background: linear-gradient(45deg, #8B5CF6, #06B6D4);
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    transition: 0.4s;
+    border-radius: 8px;
+
+}
+
+.btn-gradient:hover {
+
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px #8B5CF6,
+        0 0 40px #06B6D4;
+
+    color: white;
+
+}
+
+.glow-text {
+
+    color: #8B5CF6;
+    animation: glowBreath 3s ease-in-out infinite;
+
+}
+
+@keyframes glowBreath {
+
+    0% {
+        text-shadow: 0 0 5px #8B5CF6;
+    }
+
+    50% {
+        text-shadow: 0 0 20px #8B5CF6,
+            0 0 40px #06B6D4;
+    }
+
+    100% {
+        text-shadow: 0 0 5px #8B5CF6;
+    }
+
+}
+
+
+/* Hero Section */
+
+.services-hero {
+    padding: 150px 0 80px;
+    background: #0B0F19;
+
+
+}
+
+.services-title {
+    font-size: 60px;
+    font-weight: 700;
+    background: linear-gradient(45deg, #8B5CF6, #06B6D4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: glowBreath 3s ease-in-out infinite;
+}
+
+.services-subtitle {
+
+    color: #9CA3AF;
+    margin-top: 10px;
+
+}
+
+.services-page {
+    padding: 100px 0;
+    background: #0B0F19;
+}
+
+
+
+/* Services */
+
+.services-section {
+
+    padding: 100px 0;
+
+}
+
+.service-card {
+
+    background: #111827;
+overflow:hidden;
+    padding: 40px 30px;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    transition: 0.4s;
+
+    height: 100%;
+
+}
+
+.service-card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 0 20px #8B5CF6,
+        0 0 40px #06B6D4;
+
+}
+
+.service-card i {
+
+    font-size: 40px;
+    color: #8B5CF6;
+
+    margin-bottom: 20px;
+
+}
+
+.service-card h4 {
+
+    color: #E5E7EB;
+    margin-bottom: 10px;
+
+}
+
+.service-card p {
+
+    color: #9CA3AF;
+
+}
+
+
+/* Why Section */
+
+.why-section {
+
+    padding: 100px 0;
+
+}
+
+.section-title {
+
+    font-size: 40px;
+
+    background: linear-gradient(45deg, #8B5CF6, #06B6D4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+
+.why-card {
+
+    background: #111827;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    transition: 0.4s;
+
+    margin-bottom: 20px;
+
+    color: #E5E7EB;
+
+}
+
+.why-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 0 15px #06B6D4;
+
+}
+
+
+/* Process Section */
+
+.process-section {
+
+    padding: 100px 0;
+
+}
+
+.process-card {
+
+    background: #111827;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    color: #E5E7EB;
+
+    transition: 0.3s;
+
+}
+
+.process-card:hover {
+
+    box-shadow: 0 0 10px #8B5CF6;
+
+}
+
+
+/* Creative Section */
+
+.creative-section {
+
+    padding: 100px 0;
+
+    text-align: center;
+
+}
+
+.creative-section h2 {
+
+    font-size: 40px;
+
+    background: linear-gradient(45deg, #8B5CF6, #06B6D4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+
+.creative-section p {
+
+    color: #9CA3AF;
+
+}
+
+
+/* Form Section */
+
+.form-section {
+
+    padding: 100px 0;
+
+}
+
+/* Fix Select Responsive */
+
+.form-select {
+    width: 100%;
+    max-width: 100%;
+    background: #111827;
+    color: #ffffff;
+    border: 1px solid #1F2937;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+/* Fix Dropdown List */
+
+.form-select option {
+    background: #0B0F19;
+    color: #ffffff;
+}
+
+/* Fix Mobile Overflow */
+
+.form-section .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Mobile Fix */
+
+@media(max-width:768px) {
+
+    .form-select {
+
+        font-size: 14px;
+        padding: 10px;
+
+    }
+
+}
+
+
+/* Dropdown Option Color */
+
+select option {
+
+    background: #0B0F19;
+    color: #ffffff;
+
+}
+
+
+/* Placeholder Fix */
+
+::placeholder {
+
+    color: #ffffff !important;
+
+}
+
+
+/* Button spacing */
+
+.btn-gradient {
+
+    margin-top: 10px;
+
+}
+
+
+/* Responsive */
+
+@media(max-width:992px) {
+
+    .services-title {
+
+        font-size: 40px;
+
+    }
+
+    .section-title {
+
+        font-size: 32px;
+
+    }
+
+}
+
+
+@media(max-width:768px) {
+
+    .services-hero {
+
+        padding: 120px 0 60px;
+
+    }
+
+    .service-card {
+
+        padding: 30px 20px;
+
+    }
+
+    .process-card {
+
+        margin-bottom: 15px;
+
+    }
+
+}
+
+
+@media(max-width:576px) {
+
+    .services-title {
+
+        font-size: 32px;
+
+    }
+
+    .creative-section h2 {
+
+        font-size: 28px;
+
+    }
+
+}
+
+/* footer  */
+.footer-section {
+
+    background: #020617;
+    color: white;
+    padding: 60px 0 20px 0;
+    margin-top: 0px;
+
+}
+
+.footer-logo {
+
+    font-size: 28px;
+    font-weight: 600;
+    background: linear-gradient(45deg, #8B5CF6, #06B6D4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.footer-text {
+
+    color: #9CA3AF;
+    margin-top: 10px;
+
+}
+
+.footer-title {
+
+    font-size: 20px;
+    margin-bottom: 15px;
+
+}
+
+.footer-links {
+
+    list-style: none;
+    padding: 0;
+
+}
+
+.footer-links li {
+
+    margin-bottom: 10px;
+
+}
+
+.footer-links a {
+
+    text-decoration: none;
+    color: #9CA3AF;
+    transition: 0.3s;
+
+}
+
+.footer-links a:hover {
+
+    color: #8B5CF6;
+    padding-left: 5px;
+
+}
+
+.social-icons {
+
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+    justify-content: left;
+
+}
+
+.social-icons a {
+
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #111827;
+    border-radius: 12px;
+    color: white;
+    transition: 0.4s;
+
+}
+
+/* LinkedIn */
+.social-icons a:nth-child(1):hover {
+    color: #0A66C2;
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px #8B5CF6,
+        0 0 30px #06B6D4;
+}
+
+/* GitHub */
+.social-icons a:nth-child(2):hover {
+    color: #ffffff;
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px #8B5CF6,
+        0 0 30px #06B6D4;
+}
+
+/* Twitter/X */
+.social-icons a:nth-child(3):hover {
+    color: #1DA1F2;
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px #8B5CF6,
+        0 0 30px #06B6D4;
+}
+
+/* Instagram */
+.social-icons a:nth-child(4):hover {
+    color: #E1306C;
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px #8B5CF6,
+        0 0 30px #06B6D4;
+}
+
+/* Email */
+.social-icons a:nth-child(5):hover {
+    color: #EA4335;
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px #8B5CF6,
+        0 0 30px #06B6D4;
+}
+/* --- Scroll Animation Fixes --- */
+/* Keep the main page containers visible so spacing works correctly */
+.services-page,
+.why-section,
+.process-section,
+.creative-section,
+.form-section {
+    padding: 100px 0;
+    background: #0B0F19;
+}
+
+/* Apply the hidden state to the individual content blocks instead */
+.service-card,
+.why-card,
+.process-card,
+.creative-section h2,
+.creative-section p,
+.form-section form {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* The visible state triggered by your JavaScript scroll handler */
+.service-card.show,
+.why-card.show,
+.process-card.show,
+.creative-section h2.show,
+.creative-section p.show,
+.form-section form.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* 1. Set initial hidden state for all target scroll sections */
+/* .services-page,
+.why-section,
+.process-section,
+.creative-section,
+.form-section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+/* 2. Define the visible state when the 'show' class is added */
+/* .services-page.show,
+.why-section.show,
+.process-section.show,
+.creative-section.show,
+.form-section.show {
+    opacity: 1;
+    transform: translateY(0);
+} */ 
+
+@media(max-width:768px) {
+
+    .social-icons {
+
+        justify-content: center;
+
+    }
+}
+
+.footer-bottom {
+
+    margin-top: 20px;
+    color: #9CA3AF;
+
+}

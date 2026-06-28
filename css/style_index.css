@@ -1,0 +1,1026 @@
+body{
+
+background:#0B0F19;
+color:white;
+font-family:Arial, Helvetica, sans-serif;
+
+}
+
+/* Navbar */
+/* Mobile Navbar Background Fix */
+
+@media (max-width:991px){
+
+.navbar-collapse{
+
+background:#0B0F19;
+
+padding:20px;
+
+border-radius:10px;
+
+margin-top:10px;
+
+box-shadow:0 0 15px rgba(139,92,246,0.3);
+
+}
+
+.navbar-nav .nav-link{
+
+padding:10px 0;
+
+}
+
+}
+.navbar{
+
+background:#0B0F19;
+padding:15px 0;
+
+}
+
+.navbar-brand{
+
+color:#8B5CF6 !important;
+font-size:22px;
+
+}
+
+.nav-link{
+
+color:#E5E7EB !important;
+margin-left:20px;
+transition:0.3s;
+
+}
+
+.nav-link:hover{
+
+color:#8B5CF6 !important;
+
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    position: relative;
+}
+
+/* Active page underline */
+nav a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background: #8B5CF6;
+}
+
+/* Hero Section */
+/* Hero Section */
+
+.hero{
+
+min-height:100vh;
+display:flex;
+align-items:center;
+padding-top:100px;
+position:relative;
+
+}
+
+.hero-title{
+
+font-size:100px;
+font-weight:700;
+
+}
+
+.hero-title span{
+
+background: linear-gradient(45deg,#8B5CF6,#06B6D4);
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+
+}
+
+.hero-subtitle{
+
+margin-top:10px;
+color:#9CA3AF;
+
+}
+
+.hero-text{
+
+margin:20px 0;
+color:#D1D5DB;
+
+}
+.typing{
+color:#8B5CF6;
+font-weight:600;
+border-right:2px solid #8B5CF6;
+padding-right:5px;
+animation:blink 1s infinite;
+}
+
+@keyframes blink{
+0%{border-color:#8B5CF6;}
+50%{border-color:transparent;}
+100%{border-color:#8B5CF6;}
+}
+
+/* Gradient Button */
+
+.btn-gradient{
+
+background:linear-gradient(45deg,#8B5CF6,#06B6D4);
+border:none;
+color:white;
+padding:12px 25px;
+transition:0.4s;
+border-radius:8px;
+
+}
+
+.btn-gradient:hover{
+
+transform:translateY(-3px);
+box-shadow:0 0 20px #8B5CF6,
+0 0 40px #06B6D4;
+
+color:white;
+
+}
+
+/* Image Glow */
+
+.hero-img-box{
+
+position:relative;
+display:inline-block;
+
+}
+
+.hero-img-box::before{
+
+content:'';
+position:absolute;
+width:350px;
+height:350px;
+background:linear-gradient(45deg,#8B5CF6,#06B6D4);
+filter:blur(100px);
+z-index:-1;
+animation:glow 4s infinite alternate;
+
+}
+
+.hero-img{
+
+max-width:500px;
+height:auto;
+
+}
+
+/* Glow Animation */
+
+@keyframes glow{
+
+0%{
+transform:scale(1);
+}
+
+100%{
+transform:scale(1.2);
+}
+
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.hero{
+
+text-align:center;
+
+}
+
+.hero-title{
+
+font-size:36px;
+
+}
+
+.hero-img{
+
+margin:20px;
+height: 400px;
+width: auto;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.hero-title{
+
+font-size:28px;
+
+}
+
+}
+
+
+/* about Section start from here */
+/* About Section */
+
+.about-section{
+
+padding:100px 0;
+background:#0B0F19;
+opacity:0;
+transform:translateY(50px);
+transition:1s;
+
+}
+
+/* show animation */
+
+.about-section.show{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+/* Heading */
+
+.section-title{
+
+font-size:40px;
+font-weight:700;
+margin-bottom:25px;
+
+}
+
+/* Glow Breathing Animation */
+
+.glow-text{
+
+color:#8B5CF6;
+animation:glowBreath 3s ease-in-out infinite;
+
+}
+
+@keyframes glowBreath{
+
+0%{
+text-shadow:0 0 5px #8B5CF6;
+}
+
+50%{
+text-shadow:0 0 20px #8B5CF6,
+0 0 40px #06B6D4;
+}
+
+100%{
+text-shadow:0 0 5px #8B5CF6;
+}
+
+}
+
+/* Text */
+
+.about-text{
+
+max-width:800px;
+margin:0 auto 15px auto;
+color:#D1D5DB;
+line-height:1.8;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.section-title{
+
+font-size:30px;
+
+}
+
+.about-text{
+
+font-size:14px;
+
+}
+
+}
+/* Quote Section */
+
+.about-quote{
+
+max-width:700px;
+margin:30px auto;
+text-align:center;
+
+}
+
+.quote-text{
+
+font-size:20px;
+font-family: Georgia, 'Times New Roman', serif;
+color:#eaff00;
+font-style:italic;
+line-height:1.6;
+
+}
+
+.quote-author{
+
+display:block;
+margin-top:10px;
+color:#8B5CF6;
+font-weight:500;
+animation:quoteGlow 3s infinite;
+
+}
+
+/* Glow Animation */
+
+@keyframes quoteGlow{
+
+0%{
+text-shadow:0 0 5px #8B5CF6;
+}
+
+50%{
+text-shadow:0 0 15px #8B5CF6,
+0 0 30px #06B6D4;
+}
+
+100%{
+text-shadow:0 0 5px #8B5CF6;
+}
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.quote-text{
+
+font-size:16px;
+
+}
+
+}
+/* ...........................................................about Section end from here */
+
+
+/* ..........................................................skill section start from here */
+
+/* Skills Section */
+
+.skills-section{
+
+padding:100px 0;
+background:#0B0F19;
+
+}
+
+/* Skill Card */
+
+.skill-card{
+min-height: 100%;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
+padding:30px;
+border-radius:15px;
+text-align:center;
+transition:0.4s;
+border:1px solid rgba(255,255,255,0.1);
+position:relative;
+overflow:hidden;
+
+
+}
+
+/* Hover Glow */
+
+.skill-card:hover{
+
+transform:translateY(-10px);
+box-shadow:0 0 20px #8B5CF6,
+0 0 40px #06B6D4;
+
+}
+
+/* Gradient Border */
+
+.skill-card::before{
+
+content:'';
+position:absolute;
+top:0;
+left:-100%;
+width:100%;
+height:100%;
+background:linear-gradient(90deg,transparent,#8B5CF6,transparent);
+transition:0.6s;
+
+}
+
+.skill-card:hover::before{
+
+left:100%;
+
+}
+
+/* Text */
+
+.skill-card h4{
+
+color:#8B5CF6;
+margin-bottom:15px;
+
+}
+
+.skill-card p{
+
+color:#D1D5DB;
+min-width: 100%;
+
+}
+
+/* Floating Animation */
+
+.skill-card{
+
+animation:float 4s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-10px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.skill-card{
+
+padding:20px;
+
+}
+
+}
+
+.skills-section{
+
+opacity:0;
+transform:translateY(50px);
+transition:1s;
+
+}
+.skills-section h2{
+    font-size: 50px;
+}
+.skills-section.show{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+.btn-gradient{
+
+background:linear-gradient(45deg,#8B5CF6,#06B6D4);
+border:none;
+color:white;
+padding:12px 25px;
+border-radius:8px;
+transition:0.4s;
+
+}
+
+.btn-gradient:hover{
+
+transform:translateY(-3px);
+box-shadow:0 0 20px rgb(139, 92, 246),
+0 0 40px #06B6D4;
+
+}
+
+/* ................................................................skill section end from here */
+
+/* .................................................................project section start here  */
+
+/* Projects Section */
+
+.projects-section{
+
+padding:100px 0;
+background:#0B0F19;
+
+}
+
+/* Project Card */
+
+.project-card{
+
+background:#111827;
+border-radius:15px;
+overflow:hidden;
+transition:0.4s;
+position:relative;
+min-height: 100%;
+
+}
+
+/* Hover Effect */
+
+.project-card:hover{
+
+transform:translateY(-10px) scale(1.02);
+box-shadow:0 0 20px #8B5CF6,
+0 0 40px #06B6D4;
+
+}
+
+/* Image */
+
+.project-img{
+
+overflow:hidden;
+
+}
+
+.project-img img{
+
+transition:0.4s;
+
+}
+
+.project-card:hover img{
+
+transform:scale(1.1);
+
+}
+
+/* Content */
+
+.project-content{
+
+padding:20px;
+
+
+}
+
+.project-content h4{
+
+color:#8B5CF6;
+
+}
+
+.project-content p{
+
+color:#D1D5DB;
+
+}
+
+/* Buttons */
+
+.project-btn{
+
+margin-top:15px;
+display:flex;
+gap:10px;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.project-btn{
+
+flex-direction:column;
+
+}
+
+}
+.projects-section{
+
+opacity:0;
+transform:translateY(50px);
+transition:1s;
+
+}
+.projects-section h2{
+    font-size: 50px;
+}
+.projects-section.show{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+/*................................................................ project section end here  */
+
+/* ...............................................................services  section start here  */
+
+/* Services Section */
+
+.services-section{
+
+padding:100px 0;
+background:#0B0F19;
+
+}
+
+/* Service Card */
+
+.service-card{
+min-height: 100%;
+background:#111827;
+padding:30px;
+border-radius:15px;
+text-align:center;
+transition:0.4s;
+position:relative;
+
+
+}
+
+/* Hover Effect */
+
+.service-card:hover{
+
+transform:translateY(-10px);
+box-shadow:0 0 20px #8B5CF6,
+0 0 40px #06B6D4;
+
+}
+
+/* Icon */
+
+.service-icon{
+
+font-size:40px;
+margin-bottom:15px;
+color:#8B5CF6;
+
+}
+
+/* Text */
+
+.service-card h4{
+
+color:#8B5CF6;
+margin-bottom:10px;
+
+}
+
+.service-card p{
+
+color:#D1D5DB;
+
+}
+
+/* Gradient Border */
+
+.service-card::before{
+
+content:'';
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+border-radius:15px;
+padding:1px;
+background:linear-gradient(45deg,#8B5CF6,#06B6D4);
+-webkit-mask:
+linear-gradient(#fff 0 0) content-box,
+linear-gradient(#fff 0 0);
+mask:
+linear-gradient(#fff 0 0) content-box,
+linear-gradient(#fff 0 0);
+-webkit-mask-composite: xor;
+mask-composite: exclude;
+opacity:0;
+transition:0.4s;
+
+}
+
+.service-card:hover::before{
+
+opacity:1;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.service-card{
+
+padding:20px;
+
+}
+
+}
+
+.services-section{
+
+opacity:0;
+transform:translateY(50px);
+transition:1s;
+
+}
+
+.services-section.show{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+/* .......................................................................service sectio end here */
+
+/* .......................................................................CONTACT SECTION START FROM HERE */
+
+/* Contact Section */
+/* Contact Section */
+
+.contact-section{
+
+padding:100px 0;
+background:#0B0F19;
+
+}
+
+.contact-subtitle{
+
+color:#9CA3AF;
+
+}
+
+/* Gradient Text */
+
+.gradient-text{
+
+background:linear-gradient(45deg,#8B5CF6,#06B6D4);
+background-clip: text;
+-webkit-background-clip:text;
+color:transparent;
+
+}
+
+/* Form */
+
+.contact-form input,
+.contact-form textarea{
+
+background:#111827;
+border:1px solid #5c59b6;
+color:white;
+margin-bottom:20px;
+padding:15px;
+border-radius:10px;
+
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+
+color:#ffffff;
+
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+
+box-shadow:0 0 10px #8B5CF6;
+border-color:#8B5CF6;
+background:#111827;
+color:white;
+
+}
+
+/* Social Icons */
+
+.social-icons{
+
+display:flex;
+gap:15px;
+margin:20px 0;
+justify-content: left;
+
+}
+
+.social-icons a{
+
+width:50px;
+height:50px;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#111827;
+border-radius:12px;
+color:white;
+transition:0.4s;
+
+}
+
+.social-icons a:hover{
+
+transform:translateY(-5px);
+box-shadow:0 0 15px #8B5CF6,
+0 0 30px #06B6D4;
+
+}
+
+/* Direct Contact */
+
+.direct-contact{
+
+background:#111827;
+padding:25px;
+border-radius:15px;
+margin-top:20px;
+transition:0.4s;
+/* text-align:left;  */
+
+}
+
+.direct-contact:hover{
+
+box-shadow:0 0 20px #8B5CF6;
+
+}
+
+.direct-contact p{
+
+color:#D1D5DB;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.social-icons{
+
+justify-content:center;
+
+}
+
+.connect-title{
+
+text-align:center;
+
+}
+.connect-title h4{
+    font-family: sans-serif;
+    font-size: 500px;
+}
+}
+/* .........................................................................CONTACT SECTION ENDS HERE */
+
+/* .........................................................................footer section start from here */
+
+.footer-section{
+
+background:#020617;
+color:white;
+padding:60px 0 20px 0;
+margin-top:60px;
+
+}
+
+.footer-logo{
+
+font-size:28px;
+font-weight:600;
+background:linear-gradient(45deg,#8B5CF6,#06B6D4);
+background-clip: text;
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+}
+
+.footer-text{
+
+color:#9CA3AF;
+margin-top:10px;
+
+}
+
+.footer-title{
+
+font-size:20px;
+margin-bottom:15px;
+}
+
+.footer-links{
+
+list-style:none;
+padding:0;
+
+}
+
+.footer-links li{
+
+margin-bottom:10px;
+
+}
+
+.footer-links a{
+
+text-decoration:none;
+color:#9CA3AF;
+transition:0.3s;
+
+}
+
+.footer-links a:hover{
+
+color:#8B5CF6;
+padding-left:5px;
+
+}
+
+.social-icons a{
+
+color:white;
+font-size:20px;
+margin-right:15px;
+transition:0.4s;
+
+}
+
+.social-icons a {
+    transition: 0.3s ease;
+}
+
+/* LinkedIn */
+.social-icons a:nth-child(1):hover {
+    color: #0A66C2;
+    transform: translateY(-5px);
+}
+
+/* GitHub */
+.social-icons a:nth-child(2):hover {
+    color: #ffffff;
+    transform: translateY(-5px);
+}
+
+/* Twitter/X */
+.social-icons a:nth-child(3):hover {
+    color: #1DA1F2;
+    transform: translateY(-5px);
+}
+
+/* Instagram */
+.social-icons a:nth-child(4):hover {
+    color: #E1306C;
+    transform: translateY(-5px);
+}
+
+/* Email */
+.social-icons a:nth-child(5):hover {
+    color: #EA4335;
+    transform: translateY(-5px);
+}
+
+.footer-bottom{
+
+margin-top:20px;
+color:#9CA3AF;
+
+}
+
+/* .................................................................footer section end here */
