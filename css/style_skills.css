@@ -5,66 +5,67 @@ body {
 
     background: #0B0F19;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+     font-family:'Poppins', sans-serif;
 
 }
 
-@media (max-width:991px) {
+/* Navbar */
+/* Mobile Navbar Background Fix */
 
-    .navbar-collapse {
+@media (max-width:991px){
 
-        background: #0B0F19;
+.navbar-collapse{
 
-        padding: 20px;
+background:#0B0F19;
 
-        border-radius: 10px;
+padding:20px;
 
-        margin-top: 10px;
+border-radius:10px;
 
-        box-shadow: 0 0 15px rgba(139, 92, 246, 0.3);
+margin-top:10px;
 
-    }
-
-    .navbar-nav .nav-link {
-
-        padding: 10px 0;
-
-    }
+box-shadow:0 0 15px rgba(139,92,246,0.3);
 
 }
 
-.navbar {
+.navbar-nav .nav-link{
 
-    background: #0B0F19;
-    padding: 15px 0;
-
-}
-
-.navbar-brand {
-
-    color: #8B5CF6 !important;
-    font-size: 22px;
+padding:10px 0;
 
 }
 
-.nav-link {
+}
+.navbar{
 
-    color: #E5E7EB !important;
-    margin-left: 20px;
-    transition: 0.3s;
+background:#0B0F19;
+padding:15px 0;
 
 }
 
-.nav-link:hover {
+.navbar-brand{
 
-    color: #8B5CF6 !important;
+color:#8B5CF6 !important;
+font-size:22px;
 
 }
 
+.nav-link{
+
+color:#E5E7EB !important;
+margin-left:5px;
+transition:0.3s;
+
+}
+
+.nav-link:hover{
+
+color:#8B5CF6 !important;
+
+}
 nav a {
     text-decoration: none;
     color: white;
-    margin: 0 15px;
+    margin: 0 5px;
     position: relative;
 }
 
@@ -78,6 +79,7 @@ nav a.active::after {
     height: 2px;
     background: #8B5CF6;
 }
+
 
 
 .btn-gradient {
