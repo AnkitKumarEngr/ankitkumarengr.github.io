@@ -492,3 +492,74 @@ color:transparent;
     color: #9CA3AF;
 
 }
+
+
+/* =========================================
+   MOBILE & TABLET RESPONSIVE FIXES
+========================================= */
+
+/* Tablets and small laptops (Under 991px) */
+@media (max-width: 991px) {
+    .achievements-title {
+        font-size: 45px;
+    }
+}
+
+/* Mobile Phones (Under 768px) */
+@media (max-width: 768px) {
+    
+    /* 1. Hero Title Mobile Fix */
+    .achievements-title {
+        font-size: 32px; 
+    }
+    .achievements-hero {
+        padding: 120px 0 50px; 
+    }
+
+    /* 2. Timeline Space Adjustments for Mobile */
+    .cyber-timeline {
+        padding-left: 20px; 
+    }
+    .timeline-dot {
+        left: -27px; 
+        width: 14px;
+        height: 14px;
+        top: 8px;
+    }
+    .timeline-content {
+        padding: 15px; 
+    }
+    .timeline-content h4 {
+        font-size: 18px; 
+    }
+    .timeline-content h5 {
+        font-size: 14px;
+    }
+    
+    /* 3. Certificate Button Full Width for Easy Thumb Click */
+    .timeline-action {
+        width: 100%;
+        text-align: center !important;
+    }
+    .btn-view-cert {
+        width: 100%; 
+        margin-top: 15px;
+        padding: 12px 20px;
+    }
+
+    /* 4. Footer & Social Icons Cleanup */
+    .social-icons {
+        justify-content: center;
+        margin-top: 30px;
+    }
+}
+
+/* Extra Small Phones (Under 400px) */
+@media (max-width: 400px) {
+    .achievements-title {
+        font-size: 28px;
+    }
+    .timeline-date {
+        font-size: 11px;
+    }
+}
